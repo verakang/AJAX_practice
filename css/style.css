@@ -5,15 +5,16 @@
 
 body {
   margin: 30px 60px;
-  background-color: #eee;
+  background-color: #ddd;
 }
 
 .signupbox {
-  width: 500px;
+  width: 400px;
   display: block;
   margin: 0px auto;
   margin-top: 80px;
   border: 1px solid #333;
+  background-color: #eee;
   border-radius: 10px;
   padding: 30px;
   padding-bottom: 60px;
@@ -36,9 +37,10 @@ input {
 
 .mail, .pw {
   width: 95%;
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
   border: 1px solid #333;
+  background-color: rgba(255, 215, 0, 0.1);
   outline: none;
   padding-left: 10px;
   font-size: 20px;

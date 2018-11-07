@@ -38,11 +38,11 @@ function signup(){
 }
 
 function checkmail(){
-  var usermail = document.querySelector(".usermail").value;
-  var userpw = document.querySelector(".userpw").value;
+  var emaildata = document.querySelector(".mail").value;
+  var pwdata = document.querySelector(".pw").value;
   var useraccount = {};
-  useraccount.email = usermail;
-  useraccount.password = userpw;
+  useraccount.email = emaildata;
+  useraccount.password = pwdata;
   
   var checkdata = new XMLHttpRequest();
   checkdata.open("post","https://hexschool-tutorial.herokuapp.com/api/signin",true);
@@ -60,7 +60,7 @@ function checkmail(){
   }
   
   setTimeout(function(){
-    document.querySelector(".usermail").value = "";
-    document.querySelector(".userpw").value = "";        
+    document.querySelector(".mail").value = "";
+    document.querySelector(".pw").value = "";        
   },500)
 }
